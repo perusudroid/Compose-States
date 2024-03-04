@@ -68,10 +68,4 @@ dependencies {
 
     implementation "com.squareup.retrofit2:retrofit:2.9.0"
     implementation "com.squareup.retrofit2:converter-gson:2.9.0"
-
-    testImplementation "org.mockito:mockito-core:3.2.4"
-    testImplementation "org.mockito:mockito-inline:2.7.21"
-    testImplementation "io.mockk:mockk:1.13.9"
-
-    implementation "org.jetbrains.kotlin:kotlin-reflect:1.9.10"
 }

@@ -4,10 +4,7 @@ import com.example.findmyip.model.UserResponse
 
 
 data class SampleUIState(
-    val sampleViewState: SampleViewState,
-    val showPrevious : Boolean = false,
-    val showNext : Boolean = false,
-    val backPress : Boolean = false,
+    val sampleViewState: SampleViewState
 )
 
 sealed class SampleViewState{

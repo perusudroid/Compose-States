@@ -25,18 +25,9 @@ class MainActivity : ComponentActivity() {
         setContent {
             ComposeView(this).apply {
                 SampleView(
-                    uiState = sampleViewModel.viewStateFlow.collectAsState().value,
-                    sampleEvent = sampleViewModel::emitControlEvent
+                    uiState = sampleViewModel.viewStateFlow.collectAsState().value
                 )
             }
         }
     }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
 }
