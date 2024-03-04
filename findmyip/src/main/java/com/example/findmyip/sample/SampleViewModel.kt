@@ -17,7 +17,6 @@ class SampleViewModel : ViewModel() {
     init {
         fetchAPI()
     }
-
     private fun fetchAPI(){
         viewModelScope.launch {
             _viewStateFlow.emit(SampleUIState(sampleViewState = SampleViewState.Loading))
